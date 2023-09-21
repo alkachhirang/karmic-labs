@@ -73,7 +73,7 @@
     padding: 12px 32px;
     border: 2px solid #ffffff;
     border-radius: 82px;
-    background: transparent;
+    background:#ffffff;
     transition: all 300ms linear;
 }
 
@@ -81,15 +81,15 @@
     padding: 12px 32px;
     border: 2px solid #ffffff;
     border-radius: 82px;
-    background: #ffffff;
-    color: #040404 !important;
+    background:transparent;
+    color:#ffffff !important;
   
 }
 .started_button:hover span svg path {
-    fill: #040404 !important;
+    fill:#ffffff !important;
 }
 .started_button:hover a {
-    color: #040404 !important;
+    color:#ffffff !important;
 }
 
 .view_button {
