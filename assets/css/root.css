@@ -41,6 +41,12 @@
 .fs_64 {
     font-size: var(--fs-xxl);
 }
+.fw-500{
+    font-weight: 500;
+}
+.fw-500:hover {
+    -webkit-text-stroke: 1px #ffffff;
+}
 
 /* font-family */
 
