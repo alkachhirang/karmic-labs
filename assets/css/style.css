@@ -49,7 +49,7 @@
 .project-bg-img {
     background-image: url("../images/png/bg_white-img.png") !important;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:100% 100%;
     background-position: center;
     object-fit: cover;
 }
@@ -78,16 +78,6 @@
     transition: all 300ms linear;
 }
 
-.footer_img {
-    transition: 0.3s linear;
-    border: 1px solid white !important;
-}
-
-.footer_img:hover {
-    box-shadow: 0px 4px 15px 0px rgba(255, 255, 255, 0.692) !important;
-}
-
-
 .started_button:hover {
     padding: 12px 32px;
     border: 2px solid #ffffff;
@@ -103,6 +93,19 @@
 
 .started_button:hover a {
     color: #ffffff !important;
+}
+.arrow_img {
+    -webkit-animation: popupdown 1.5s infinite linear;
+    animation: popupdown 1.5s linear infinite;
+}
+
+.footer_img {
+    transition: 0.3s linear;
+    border: 1px solid white !important;
+}
+
+.footer_img:hover {
+    box-shadow: 0px 4px 15px 0px rgba(255, 255, 255, 0.692) !important;
 }
 
 .view_button {
@@ -373,7 +376,22 @@
 .pointer_event_none {
     pointer-events: none;
 }
+@-webkit-keyframes popupdown {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
 
+    50% {
+        -webkit-transform: translateY(15%);
+        transform: translateY(15%);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
 @keyframes swing {
     0% {
         transform: scale(1);
@@ -387,7 +405,6 @@
         transform: scale(1);
     }
 }
-
 @media (max-width:992px) {
     .overflow_hiddden {
         overflow: hidden;
@@ -425,8 +442,11 @@
     .cross .line2 {
         transform: rotate(-50deg) translateY(-50%);
     }
-}
 
+        .project-bg-img {
+            background-size:cover !important;
+        }
+}
 @media (min-width:992px) {
     .mw_224 {
         max-width: 224px;
@@ -449,14 +469,12 @@
         background-position: unset !important;
     }
 }
-
 @media (min-width:768px) {
     .white_circle_md {
         right: -11%;
         top: -13%;
     }
 }
-
 @media (min-width:1200px) {
     .max-width_570 {
         max-width: 570px !important;
@@ -554,7 +572,6 @@
         background-color: #040404;
     }
 }
-
 @media (min-width:1440px) {
     .h_686 {
         height: 686px !important;
