@@ -57,10 +57,12 @@ $('.custom_slider').slick({
 $('.myslider').slick({
     dots: false,
     infinite: true,
-    speed: 300,
+    speed:5000,
     slidesToShow:3,
     slidesToScroll:3,
     arrows: false,
+    autoplay: true,
+    autoplayspeed:0,
     responsive: [
         {
             breakpoint: 1400,
@@ -68,6 +70,7 @@ $('.myslider').slick({
                 slidesToShow:3,
                 slidesToScroll: 3,
                 infinite: true,
+
             }
         },
         {
